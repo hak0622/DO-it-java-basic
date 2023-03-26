@@ -1,3 +1,5 @@
+package staticexample;
+
 public class Javajungsuk6_6ex {
 
 	public static void main(String[] args) {
