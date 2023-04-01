@@ -47,7 +47,7 @@ class MyTv{
 	}
 	
 	void volumeDown() {
-		if(volume<MIN_VOLUME) {
+		if(volume>MIN_VOLUME) {
 			volume--;
 		}
 	}
