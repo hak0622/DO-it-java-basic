@@ -1,0 +1,37 @@
+package array;
+
+import java.io.FileReader;
+
+public class Ex7_8 {
+
+	public static void main(String[] args) {
+	
+		Car7 car = null;
+		FireEngine fe = new FireEngine();
+		FireEngine fe2 = null;
+		
+		fe.water();
+		car = fe;
+		fe2 = (FireEngine)car;
+		fe2.water();
+
+	}
+}
+
+class Car7{
+	String color;
+	int door;
+	
+	void drive() {
+		System.out.println("drive, Brrr~");
+	}
+	void stop() {
+		System.out.println("stop!");
+	}
+}
+
+class FireEngine extends Car7{
+	void water() {
+		System.out.println("water!!");
+	}
+}
